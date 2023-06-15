@@ -1,25 +1,31 @@
+import css from './Modal.module.css'
+
 const Modal = () => {
 	return (
-		<section>
-			<div>
-				<div>
-					<span>Printer options</span>
-					<button>X</button>
+		<section className={css.modal}>
+			<div className={css.overlay}></div>
+			<div className={css.modalWindow}>
+				<div className={css.modalHead}>
+					<span className={css.modalTitle}>Printer options</span>
+					<button className={css.butCloseModal}>X</button>
 				</div>
 
-				<div>
+				<div className={css.modalBody}>
 					<p>
-						<label for='name'>
+						<label>
 							Printer name
 							<br />
-							<input placeholder='Enter a name for the printer' />
+							<input
+								className={css.modalEdit}
+								placeholder='Enter a name for the printer'
+							/>
 						</label>
 					</p>
 					<p>
-						<label for='size'>
+						<label>
 							Maximum paper, size
 							<br />
-							<select id='size' class='modalEdit'>
+							<select className={css.modalEdit}>
 								<option value='A3'>A3</option>
 								<option value='A4'>A4</option>
 								<option value='A5'>A5</option>
@@ -30,45 +36,52 @@ const Modal = () => {
 						</label>
 					</p>
 					<p>
-						<label for='speed'>
+						<label>
 							Print speed, ppm
 							<br />
-							<input placeholder='Enter the print speed, ppm' />
+							<input
+								className={css.modalEdit}
+								placeholder='Enter the print speed, ppm'
+							/>
 						</label>
 					</p>
 					<p>
-						<label for='resource'>
+						<label>
 							Cartridge resource, page
 							<br />
-							<input placeholder='Enter the cartridge resource, page' />
+							<input
+								className={css.modalEdit}
+								placeholder='Enter the cartridge resource, page'
+							/>
 						</label>
 					</p>
 					<p>
-						<label for='price'>
+						<label>
 							Price, UAH
 							<br />
-							<input placeholder='Enter the price printer' />
+							<input
+								className={css.modalEdit}
+								placeholder='Enter the price printer'
+							/>
 						</label>
 					</p>
 					<p>
-						<img alt='' src='' />
+						<img id={css.modalFile} alt='' src='' />
 						<br />
-						<label for='img'>
+						<label>
 							Select image files
 							<br />
-							<input type='file' accept='.png, .jpg, .jpeg' />
+							<input
+								type='file'
+								className={css.modalEdit}
+								accept='.png, .jpg, .jpeg'
+							/>
 						</label>
 					</p>
 				</div>
 
-				<div class='modalBut'>
-					<button
-						class='butConfirmModal'
-						id='butConfirmModal'
-						onclick='addElementToLocalStorage()'
-					>
-						Confirm
-					</button>
+				<div>
+					<button className={css.butConfirmModal}>Confirm</button>
 				</div>
 			</div>
 		</section>

@@ -5,7 +5,7 @@ const Header = () => {
 		<header className='container'>
 			<div className={css.empty}></div>
 			<section className={css.header}>
-				<span>MY PRINTERS</span>
+				<span className={css.title}>MY PRINTERS</span>
 				<button type='button' className={css.butCreate}>
 					Create printer
 				</button>
