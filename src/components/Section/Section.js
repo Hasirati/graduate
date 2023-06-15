@@ -4,7 +4,7 @@ import css from './Section.module.css'
 
 function Section({ title, children }) {
 	return (
-		<div>
+		<div className='container'>
 			{title && <h2 className={css.h2}>{title}</h2>}
 			{children}
 		</div>

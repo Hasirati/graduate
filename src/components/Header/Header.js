@@ -36,10 +36,6 @@ const Header = () => {
 					</li>
 				</ul>
 			</nav>
-
-			<div>
-				<img src='../assets/images/mainPhoto.jpg' className={css.mainPhoto} />
-			</div>
 		</header>
 	)
 }

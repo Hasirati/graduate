@@ -23,12 +23,6 @@ body {
 	padding: 0px 15px;
 }
 
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-
 :root {
 	--black: #000;
 	--white: #fff;
@@ -36,4 +30,10 @@ body {
 	--blue: rgb(0, 4, 255);
 	--red: rgb(255, 0, 0);
 	--light-blue: CornflowerBlue;
+}
+
+header,
+footer,
+.container {
+	flex-grow: 1;
 }

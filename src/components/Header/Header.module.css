@@ -85,12 +85,12 @@ nav {
 nav ul {
 	display: flex;
 	flex-direction: row;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 nav ul * {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
 }
 
 nav ul li {
@@ -114,11 +114,4 @@ nav ul li a {
 nav ul li a:hover {
 	color: white;
 	cursor: pointer;
-}
-
-/*  */
-
-.mainPhoto {
-	width: 100%;
-	object-fit: cover;
 }
