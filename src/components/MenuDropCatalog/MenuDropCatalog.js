@@ -1,12 +1,8 @@
-// import { BiMessageSquare } from 'react-icons/bi'
-// import { BsFillTelephoneFill } from 'react-icons/bs'
-// import { GiReceiveMoney } from 'react-icons/gi'
-// import { TbTruckDelivery, TbTruckReturn } from 'react-icons/tb'
-import css from './MenuDrop.module.css'
+import css from './MenuDropCatalog.module.css'
 
-const MenuDrop = () => {
+const MenuDropCatalog = () => {
 	return (
-		<section>
+		<section className={css.menuDrop}>
 			<div className={css.menuDropDownCatalog}>
 				<div>
 					<li>
@@ -54,42 +50,8 @@ const MenuDrop = () => {
 					<img src='./assets/images/Samsung/Samsung-Xpress-M2070W.jpg' />
 				</div>
 			</div>
-			{/* <div className={css.dropDownMenu}>
-				<div className={css.dropDownMenuDiv}>
-					<div className={css.menuIkon}>
-						<a href='#'>
-							<GiReceiveMoney className={css.icon} />
-							<div>Payment</div>
-						</a>
-					</div>
-					<div className={css.menuIkon}>
-						<a href='#'>
-							<TbTruckDelivery className={css.icon} />
-							<div>Delivery</div>
-						</a>
-					</div>
-					<div className={css.menuIkon}>
-						<a href='#'>
-							<TbTruckReturn className={css.icon} />
-							<div>Return</div>
-						</a>
-					</div>
-					<div className={css.menuIkon}>
-						<a href='#'>
-							<BiMessageSquare className={css.icon} />
-							<div>Advices</div>
-						</a>
-					</div>
-					<div className={css.menuIkon}>
-						<a href='#'>
-							<BsFillTelephoneFill className={css.icon} />
-							<div>Contacts</div>
-						</a>
-					</div>
-				</div>
-			</div> */}
 		</section>
 	)
 }
 
-export default MenuDrop
+export default MenuDropCatalog

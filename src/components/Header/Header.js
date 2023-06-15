@@ -4,7 +4,7 @@ const Header = () => {
 	return (
 		<header className='container'>
 			<div className={css.empty}></div>
-			<section>
+			<section className={css.header}>
 				<span>MY PRINTERS</span>
 				<button type='button' className={css.butCreate}>
 					Create printer
