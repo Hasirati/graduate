@@ -1,0 +1,22 @@
+.compContent {
+	border: solid black 2px;
+	background-color: var(--white);
+	border-radius: 10px;
+	width: 240px;
+	margin: 10px auto;
+}
+
+.compImg {
+	padding-top: 10px;
+	box-shadow: 1px 1px 10px var(--shadow);
+	width: 220px;
+	display: block;
+	margin: 3px auto 15px;
+	margin-top: 5px;
+}
+
+.compLine {
+	line-height: 2.5;
+	text-align: center;
+	font-size: smaller;
+}

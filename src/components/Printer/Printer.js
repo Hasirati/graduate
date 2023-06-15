@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types'
-
+import css from './Printer.module.css'
 const Printer = ({ url, name, size, speed, resource, price }) => {
 	return (
-		<div>
-			<div>
-				<img src={url} alt={name} width='200' />
-				<h3>{name}</h3>
-				<p>Maximum paper size: {size}</p>
-				<p>Color print speed, ppm: {speed}</p>
-				<p>Cartridge resource, page: {resource}</p>
-				<p>Price: {price} UAH</p>
-			</div>
+		<div class={css.compContent}>
+			<img className={css.compImg} src={url} alt={name} />
+			<h3 className={css.compLine}>{name}</h3>
+			<p className={css.compLine}>Maximum paper size: {size}</p>
+			<p className={css.compLine}>Color print speed, ppm: {speed}</p>
+			<p className={css.compLine}>Cartridge resource, page: {resource}</p>
+			<p className={css.compLine}>Price: {price} UAH</p>
 		</div>
 	)
 }

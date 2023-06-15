@@ -1,8 +1,8 @@
 import Printer from '../Printer/Printer.js'
-
+import css from './PrinterList.module.css'
 function PrinterList({ items }) {
 	return (
-		<ul>
+		<ul className={css.compTable}>
 			{items.map(printer => (
 				<li key={printer.id}>
 					<Printer
