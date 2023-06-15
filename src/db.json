@@ -1,0 +1,596 @@
+[
+	{
+		"id": "id-1",
+		"name": "3D FlashForge",
+		"size": "A1",
+		"speed": 1,
+		"resource": 20,
+		"price": 24000,
+		"url": "./assets/images/Brother/3D-FlashForge.png"
+	},
+	{
+		"id": "id-2",
+		"name": "Brother DCP-1510E",
+		"size": "A4",
+		"speed": 24,
+		"resource": 1000,
+		"price": 7139,
+		"url": "./assets/images/Brother/Brother-DCP-1510E.jpg"
+	},
+	{
+		"id": "id-3",
+		"name": "Brother DCP-L2500DR",
+		"size": "A4",
+		"speed": 26,
+		"resource": 1200,
+		"price": 7999,
+		"url": "./assets/images/Brother/Brother-DCP-L2500DR.jpg"
+	},
+	{
+		"id": "id-4",
+		"name": "Brother DCP-L3550CDW",
+		"size": "A4",
+		"speed": 18,
+		"resource": 2000,
+		"price": 28674,
+		"url": "./assets/images/Brother/Brother-DCP-L3550CDW.jpg"
+	},
+	{
+		"id": "id-5",
+		"name": "Brother DCP-T420W",
+		"size": "A4",
+		"speed": 16,
+		"resource": 1000,
+		"price": 6299,
+		"url": "./assets/images/Brother/Brother-DCP-T420W.jpg"
+	},
+	{
+		"id": "id-6",
+		"name": "BROTHER HL-1110R",
+		"size": "A4",
+		"speed": 10,
+		"resource": 700,
+		"price": 5663,
+		"url": "./assets/images/Brother/BROTHER-HL-1110R.jpg"
+	},
+	{
+		"id": "id-7",
+		"name": "BROTHER HL-1210WE",
+		"size": "A4",
+		"speed": 20,
+		"resource": 650,
+		"price": 5229,
+		"url": "./assets/images/Brother/BROTHER-HL-1210WE.jpg"
+	},
+	{
+		"id": "id-8",
+		"name": "Brother HL-L2300DR",
+		"size": "A4",
+		"speed": 26,
+		"resource": 650,
+		"price": 5334,
+		"url": "./assets/images/Brother/Brother-HL-L2300DR.jpg"
+	},
+	{
+		"id": "id-9",
+		"name": "Brother HL-L2340DWR with Wi-Fi",
+		"size": "A4",
+		"speed": 26,
+		"resource": 700,
+		"price": 6521,
+		"url": "./assets/images/Brother/Brother-HL-L2340DWR-with-Wi-Fi.jpg"
+	},
+	{
+		"id": "id-10",
+		"name": "Brother MFC-L5750DWR with Wi-Fi",
+		"size": "A4",
+		"speed": 40,
+		"resource": 2500,
+		"price": 25658,
+		"url": "./assets/images/Brother/Brother-MFC-L5750DWR-Wi-Fi.jpg"
+	},
+	{
+		"id": "id-11",
+		"name": "Canon i-Sensys",
+		"size": "A4",
+		"speed": 18,
+		"resource": 1150,
+		"price": 11599,
+		"url": "./assets/images/Canon/Canon-i-Sensys.jpg"
+	},
+	{
+		"id": "id-12",
+		"name": "CANON i-Sensys LBP6030B",
+		"size": "A4",
+		"speed": 18,
+		"resource": 960,
+		"price": 6300,
+		"url": "./assets/images/Canon/CANON-i-Sensys-LBP6030B.jpg"
+	},
+	{
+		"id": "id-13",
+		"name": "Canon I-SENSYS MF267dw",
+		"size": "A4",
+		"speed": 25,
+		"resource": 1200,
+		"price": 15499,
+		"url": "./assets/images/Canon/Canon-I-SENSYS-MF267dw.jpg"
+	},
+	{
+		"id": "id-14",
+		"name": "Canon i-Sensys MF3010",
+		"size": "A4",
+		"speed": 18,
+		"resource": 1200,
+		"price": 12100,
+		"url": "./assets/images/Canon/Canon-i-Sensys-MF3010.jpg"
+	},
+	{
+		"id": "id-15",
+		"name": "Canon Laser T140",
+		"size": "A4",
+		"speed": 16,
+		"resource": 840,
+		"price": 8300,
+		"url": "./assets/images/Canon/Canon-Laser-T140.jpg"
+	},
+	{
+		"id": "id-16",
+		"name": "Canon MAXIFY GX6040",
+		"size": "A4",
+		"speed": 5,
+		"resource": 300,
+		"price": 12000,
+		"url": "./assets/images/Canon/Canon-MAXIFY-GX6040.jpg"
+	},
+	{
+		"id": "id-17",
+		"name": "CANON PIXMA E414",
+		"size": "A6",
+		"speed": 3,
+		"resource": 120,
+		"price": 4199,
+		"url": "./assets/images/Canon/CANON-PIXMA-E414.jpg"
+	},
+	{
+		"id": "id-18",
+		"name": "Canon PIXMA G540",
+		"size": "A6",
+		"speed": 4,
+		"resource": 250,
+		"price": 9299,
+		"url": "./assets/images/Canon/Canon-PIXMA-G540.jpg"
+	},
+	{
+		"id": "id-19",
+		"name": "Canon SELPHY CP-1300 Pink",
+		"size": "A4",
+		"speed": 5,
+		"resource": 20,
+		"price": 5990,
+		"url": "./assets/images/Canon/Canon-SELPHY-CP-1300-Pink.jpg"
+	},
+	{
+		"id": "id-20",
+		"name": "Canon SELPHY CP-1300 White",
+		"size": "A4",
+		"speed": 5,
+		"resource": 30,
+		"price": 6120,
+		"url": "./assets/images/Canon/Canon-SELPHY-CP-1300-White.jpg"
+	},
+	{
+		"id": "id-21",
+		"name": "Dell B2360Dn Mono",
+		"size": "A4",
+		"speed": 16,
+		"resource": 800,
+		"price": 7597,
+		"url": "./assets/images/Dell/Dell-B2360Dn-Mono.jpg"
+	},
+	{
+		"id": "id-22",
+		"name": "Dell E310dw",
+		"size": "A4",
+		"speed": 26,
+		"resource": 600,
+		"price": 4589,
+		"url": "./assets/images/DellDell-E310dw.jpg"
+	},
+	{
+		"id": "id-23",
+		"name": "Epson L110",
+		"size": "A4",
+		"speed": 18,
+		"resource": 750,
+		"price": 6300,
+		"url": "./assets/images/Epson/Epson-L110.jpg"
+	},
+	{
+		"id": "id-24",
+		"name": "Epson L1300",
+		"size": "A4",
+		"speed": 6,
+		"resource": 650,
+		"price": 7500,
+		"url": "./assets/images/Epson/Epson-L1300.jpg"
+	},
+	{
+		"id": "id-25",
+		"name": "Epson L222",
+		"size": "A4",
+		"speed": 12,
+		"resource": 420,
+		"price": 9000,
+		"url": "./assets/images/Epson/Epson-L222.jpg"
+	},
+	{
+		"id": "id-26",
+		"name": "Epson L300",
+		"size": "A4",
+		"speed": 11,
+		"resource": 560,
+		"price": 8999,
+		"url": "./assets/images/Epson/Epson-L300.jpg"
+	},
+	{
+		"id": "id-27",
+		"name": "Epson L3156",
+		"size": "A4",
+		"speed": 14,
+		"resource": 430,
+		"price": 9600,
+		"url": "./assets/images/Epson/Epson-L3156.jpg"
+	},
+	{
+		"id": "id-28",
+		"name": "Epson L6490 with Wi-Fi",
+		"size": "A4",
+		"speed": 18,
+		"resource": 1200,
+		"price": 26030,
+		"url": "./assets/images/Epson/Epson-L6490-with-Wi-Fi.jpg"
+	},
+	{
+		"id": "id-29",
+		"name": "Epson L6550 A4 with Wi-Fi",
+		"size": "A4",
+		"speed": 12,
+		"resource": 850,
+		"price": 21350,
+		"url": "./assets/images/Epson/Epson-L6550-A4-with-Wi-Fi.jpg"
+	},
+	{
+		"id": "id-30",
+		"name": "Epson L810",
+		"size": "A4",
+		"speed": 14,
+		"resource": 350,
+		"price": 14200,
+		"url": "./assets/images/Epson/Epson-L810.jpeg"
+	},
+	{
+		"id": "id-31",
+		"name": "Epson M15140",
+		"size": "A4",
+		"speed": 6,
+		"resource": 450,
+		"price": 7599,
+		"url": "./assets/images/Epson/Epson-M15140.jpg"
+	},
+	{
+		"id": "id-32",
+		"name": "EPSON SureColor SC-F501",
+		"size": "A4",
+		"speed": 4,
+		"resource": 300,
+		"price": 4560,
+		"url": "./assets/images/Epson/EPSON-SureColor-SC-F501.jpg"
+	},
+	{
+		"id": "id-33",
+		"name": "HP DeskJet 2710 with Wi-Fi",
+		"size": "A4",
+		"speed": 4,
+		"resource": 200,
+		"price": 10340,
+		"url": "./assets/images/HP/HP-DeskJet-2710-with-Wi-Fi.jpg"
+	},
+	{
+		"id": "id-34",
+		"name": "HP Ink Tank 410 with Wi-Fi",
+		"size": "A4",
+		"speed": 3,
+		"resource": 180,
+		"price": 9630,
+		"url": "./assets/images/HP/HP-Ink-Tank-410-with-Wi-Fi.jpg"
+	},
+	{
+		"id": "id-35",
+		"name": "HP Laser 135w",
+		"size": "A4",
+		"speed": 15,
+		"resource": 600,
+		"price": 8000,
+		"url": "./assets/images/HP/HP-Laser-135w.jpg"
+	},
+	{
+		"id": "id-36",
+		"name": "HP LaserJet M211d",
+		"size": "A4",
+		"speed": 10,
+		"resource": 200,
+		"price": 8600,
+		"url": "./assets/images/HP/HP-LaserJet-M211d.jpg"
+	},
+	{
+		"id": "id-37",
+		"name": "HP LaserJet MFP M236sdw ADF",
+		"size": "A4",
+		"speed": 11,
+		"resource": 500,
+		"price": 11200,
+		"url": "./assets/images/HP/HP-LaserJet-MFP-M236sdw-ADF.jpg"
+	},
+	{
+		"id": "id-38",
+		"name": "HP LaserJet Pro M15w",
+		"size": "A4",
+		"speed": 8,
+		"resource": 200,
+		"price": 5800,
+		"url": "./assets/images/HP/HP-LaserJet-Pro-M15w.jpg"
+	},
+	{
+		"id": "id-39",
+		"name": "HP LaserJet Pro M28w",
+		"size": "A4",
+		"speed": 18,
+		"resource": 300,
+		"price": 9600,
+		"url": "./assets/images/HP/HP-LaserJet-Pro-M28w.jpg"
+	},
+	{
+		"id": "id-40",
+		"name": "HP LaserJet Pro M428dw з Wi-Fi",
+		"size": "A4",
+		"speed": 20,
+		"resource": 1200,
+		"price": 23500,
+		"url": "./assets/images/HP/HP-LaserJet-Pro-M428dw-with-Wi-Fi.jpg"
+	},
+	{
+		"id": "id-41",
+		"name": "HP LaserJet Pro M428fdn",
+		"size": "A4",
+		"speed": 15,
+		"resource": 1200,
+		"price": 20500,
+		"url": "./assets/images/HP/HP-LaserJet-Pro-M428fdn.jpg"
+	},
+	{
+		"id": "id-42",
+		"name": "HP Sprocket Photo Print Black Noir",
+		"size": "A6",
+		"speed": 1,
+		"resource": 6,
+		"price": 14599,
+		"url": "./assets/images/HP/HP-Sprocket-Photo-Print-Black-Noir.jpg"
+	},
+	{
+		"id": "id-43",
+		"name": "JETIX Mini printer Blue",
+		"size": "A6",
+		"speed": 1,
+		"resource": 10,
+		"price": 8500,
+		"url": "./assets/images/Jetix/JETIX-Mini-printer-Blue.jpg"
+	},
+	{
+		"id": "id-44",
+		"name": "JETIX Mini printer Pink",
+		"size": "A6",
+		"speed": 1,
+		"resource": 10,
+		"price": 8500,
+		"url": "./assets/images/Jetix/JETIX-Mini-printer-Pink.jpg"
+	},
+	{
+		"id": "id-45",
+		"name": "JETIX Mini Printer Student",
+		"size": "A6",
+		"speed": 1,
+		"resource": 6,
+		"price": 9800,
+		"url": "./assets/images/Jetix/JETIX-Mini-Printer-Student.jpg"
+	},
+	{
+		"id": "id-46",
+		"name": "JETIX Mini Printer with Bluetooth",
+		"size": "A6",
+		"speed": 1,
+		"resource": 12,
+		"price": 10500,
+		"url": "./assets/images/Jetix/JETIX-Mini-Printer-with-Bluetooth.png"
+	},
+	{
+		"id": "id-47",
+		"name": "KODAK Mini 3 Plus",
+		"size": "A6",
+		"speed": 1,
+		"resource": 10,
+		"price": 18000,
+		"url": "./assets/images/Kodak/KODAK-Mini-3-Plus.jpg"
+	},
+	{
+		"id": "id-48",
+		"name": "Kodak PD450",
+		"size": "A6",
+		"speed": 1,
+		"resource": 6,
+		"price": 14000,
+		"url": "./assets/images/Kodak/Kodak-PD450.jpg"
+	},
+	{
+		"id": "id-49",
+		"name": "Kodak Photo Printer Dock PD450W",
+		"size": "A4",
+		"speed": 9,
+		"resource": 200,
+		"price": 6800,
+		"url": "./assets/images/Kodak/Kodak-Photo-Printer-Dock-PD450W.jpg"
+	},
+	{
+		"id": "id-50",
+		"name": "Kodak Photo Printer Mini 2",
+		"size": "A6",
+		"speed": 1,
+		"resource": 6,
+		"price": 7890,
+		"url": "./assets/images/Kodak/Kodak-Photo-Printer-Mini-2.jpg"
+	},
+	{
+		"id": "id-51",
+		"name": "Kodak PM210 Photo Printer Mini",
+		"size": "A6",
+		"speed": 1,
+		"resource": 15,
+		"price": 21750,
+		"url": "./assets/images/Kodak/Kodak-PM210-Photo-Printer-Mini.jpg"
+	},
+	{
+		"id": "id-52",
+		"name": "Kyocera Ecosys M2135dn",
+		"size": "A4",
+		"speed": 16,
+		"resource": 1200,
+		"price": 21500,
+		"url": "./assets/images/Kyocera/Kyocera-Ecosys-M2135dn.jpg"
+	},
+	{
+		"id": "id-53",
+		"name": "Kyocera Ecosys M3040DN",
+		"size": "A4",
+		"speed": 20,
+		"resource": 1200,
+		"price": 24000,
+		"url": "./assets/images/Kyocera/Kyocera-Ecosys-M3040DN.jpg"
+	},
+	{
+		"id": "id-54",
+		"name": "Kyocera Ecosys P3055dn",
+		"size": "A4",
+		"speed": 10,
+		"resource": 1200,
+		"price": 14000,
+		"url": "./assets/images/Kyocera/Kyocera-Ecosys-P3055dn.jpg"
+	},
+	{
+		"id": "id-55",
+		"name": "Kyocera Ecosys P5021cdw",
+		"size": "A4",
+		"speed": 10,
+		"resource": 1200,
+		"price": 14500,
+		"url": "./assets/images/Kyocera/Kyocera-Ecosys-P5021cdw.jpg"
+	},
+	{
+		"id": "id-56",
+		"name": "Kyocera FS 1020MFP",
+		"size": "A4",
+		"speed": 12,
+		"resource": 1200,
+		"price": 16300,
+		"url": "./assets/images/Kyocera/Kyocera-FS-1020MFP.jpg"
+	},
+	{
+		"id": "id-57",
+		"name": "Kyocera FS 1025MFP",
+		"size": "A4",
+		"speed": 18,
+		"resource": 1200,
+		"price": 18400,
+		"url": "./assets/images/Kyocera/Kyocera-FS-1025MFP.jpg"
+	},
+	{
+		"id": "id-58",
+		"name": "Kyocera FS 1060DN",
+		"size": "A4",
+		"speed": 10,
+		"resource": 1200,
+		"price": 7999,
+		"url": "./assets/images/Kyocera/Kyocera-FS-1060DN.jpg"
+	},
+	{
+		"id": "id-59",
+		"name": "Kyocera M2040dn",
+		"size": "A4",
+		"speed": 16,
+		"resource": 1200,
+		"price": 17900,
+		"url": "./assets/images/Kyocera/Kyocera-M2040dn.jpg"
+	},
+	{
+		"id": "id-60",
+		"name": "Kyocera P2235DN",
+		"size": "A4",
+		"speed": 10,
+		"resource": 1200,
+		"price": 13200,
+		"url": "./assets/images/Kyocera/Kyocera-P2235DN.jpg"
+	},
+	{
+		"id": "id-61",
+		"name": "Kyocera TASKalfa 2553ci",
+		"size": "A4",
+		"speed": 19,
+		"resource": 1200,
+		"price": 23500,
+		"url": "./assets/images/Kyocera/Kyocera-TASKalfa-2553ci.jpg"
+	},
+	{
+		"id": "id-62",
+		"name": "Polaroid Hi Print 2x3",
+		"size": "A6",
+		"speed": 1,
+		"resource": 6,
+		"price": 14800,
+		"url": "./assets/images/Polaroid/Polaroid-Hi-Print-2x3.jpg"
+	},
+	{
+		"id": "id-63",
+		"name": "Polaroid Lab",
+		"size": "A6",
+		"speed": 1,
+		"resource": 6,
+		"price": 8760,
+		"url": "./assets/images/Polaroid/Polaroid-Lab.jpg"
+	},
+	{
+		"id": "id-64",
+		"name": "samsung SCX 3405",
+		"size": "A4",
+		"speed": 14,
+		"resource": 500,
+		"price": 7400,
+		"url": "./assets/images/Samsung/samsung-SCX-3405.jpeg"
+	},
+	{
+		"id": "id-65",
+		"name": "Samsung SL M2026",
+		"size": "A4",
+		"speed": 13,
+		"resource": 600,
+		"price": 8300,
+		"url": "./assets/images/Samsung/Samsung-SL-M2026.jpg"
+	},
+	{
+		"id": "id-66",
+		"name": "Samsung Xpress M2070W",
+		"size": "A4",
+		"speed": 12,
+		"resource": 550,
+		"price": 7900,
+		"url": "./assets/images/Samsung/Samsung-Xpress-M2070W.jpg"
+	}
+]
