@@ -1,20 +1,16 @@
-import printers from '../db.json'
 import Header from './Header/Header.js'
-import Modal from './Modal/Modal'
-import PrinterList from './PrinterList/PrinterList.js'
-import Section from './Section/Section.js'
-import PrinterPaper from './PrinterPaper/PrinterPaper.js'
-import MainPhoto from './MainPhoto/MainPhoto'
 import Footer from './Footer/Footer'
+import PrinterPaper from './PrinterPaper/PrinterPaper'
+import PrinterList from './PrinterList/PrinterList.js'
+import printers from '../db.json'
 
 export default function App() {
 	return (
 		<>
 			<Header />
-			<MainPhoto />
-			<PrinterPaper title='Assortment'>
+			{/* <PrinterPaper title='Assortment'>
 				<PrinterList items={printers} />
-			</PrinterPaper>
+			</PrinterPaper> */}
 			<Footer />
 		</>
 	)

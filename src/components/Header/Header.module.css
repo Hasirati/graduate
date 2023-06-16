@@ -97,21 +97,14 @@ nav ul li {
 	display: block;
 	height: 25px;
 	position: relative;
-}
-
-nav ul li:hover {
-	background-color: var(--light-blue);
-}
-
-nav ul li a {
 	display: table-cell;
 	min-width: 80px;
 	text-align: center;
 	color: black;
-	text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
+	background-color: var(--light-blue);
 	color: white;
 	cursor: pointer;
 }

@@ -3,6 +3,6 @@
 	color: var(--white);
 	padding: 8px;
 	box-shadow: 10px 10px 10px var(--shadow);
-	margin: auto;
-	width: 99%;
+	margin: 20px auto;
+	width: 100%;
 }
