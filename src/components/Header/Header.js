@@ -1,14 +1,24 @@
 import css from './Header.module.css'
+import React from 'react'
+import Modal from '../Modal/Modal'
 
-const Header = () => {
+const Header = ({
+	toggle,
+	homePaper,
+	catalogPaper,
+	menuPaper,
+	aboutPaper,
+	visible,
+}) => {
 	return (
 		<header className='container'>
 			<div className={css.empty}></div>
 			<section className={css.header}>
 				<span className={css.title}>MY PRINTERS</span>
-				<button type='button' className={css.butCreate}>
+				<button type='button' className={css.butCreate} onClick={toggle}>
 					Create printer
 				</button>
+
 				<label>
 					<input
 						type='search'
@@ -22,20 +32,21 @@ const Header = () => {
 
 			<nav>
 				<ul>
-					<li>
+					<li onClick={homePaper}>
 						<a href='#'>Home</a>
 					</li>
-					<li>
+					<li onMouseEnter={catalogPaper}>
 						<a href='#'>Catalog</a>
 					</li>
-					<li>
+					<li onMouseEnter={menuPaper}>
 						<a href='#'>Menu</a>
 					</li>
-					<li>
+					<li onClick={aboutPaper}>
 						<a href='#'>About us</a>
 					</li>
 				</ul>
 			</nav>
+			{visible}
 		</header>
 	)
 }

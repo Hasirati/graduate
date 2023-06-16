@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import css from './Printer.module.css'
 const Printer = ({ url, name, size, speed, resource, price }) => {
 	return (
-		<div class={css.compContent}>
+		<div className={css.compContent}>
 			<img className={css.compImg} src={url} alt={name} />
 			<h3 className={css.compLine}>{name}</h3>
 			<p className={css.compLine}>Maximum paper size: {size}</p>
