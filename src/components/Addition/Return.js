@@ -1,3 +1,6 @@
+import css from './addition.module.css'
+import PrinterPaper from '../PrinterPaper/PrinterPaper.js'
+
 const Return = () => (
 	<section>
 		<PrinterPaper title='Payment'>
@@ -35,11 +38,11 @@ const Return = () => (
 					</li>
 
 					<ul>
-						<li style="list-style-type: '- ';">
+						<li className={css.list}>
 							a copy of the mandatory completed and signed return application
 							form (we send the form with each order);
 						</li>
-						<li style="list-style-type: '- ';">
+						<li className={css.list}>
 							photo of a marriage, in case of a return due to the discovery of a
 							marriage, which is very rare.
 						</li>
@@ -62,11 +65,11 @@ const Return = () => (
 						Send the parcel (at your own expense) by New mail to the address
 						indicated in the return application form. The cost of delivery is
 						paid by you (the buyer) according to the tariffs of New Mail. Please
-						note{' '}
+						note
 						<b>
 							that we do not accept parcels sent by cash on delivery or with
 							forwarding at the expense of the recipient.
-						</b>{' '}
+						</b>
 						In this case, the parcels are returned to the sender.
 					</li>
 					<br />
@@ -87,7 +90,7 @@ const Return = () => (
 				</ol>
 
 				<p>
-					* ATTENTION!{' '}
+					* ATTENTION!
 					<b>
 						Products are accepted for return only if the presentation is
 						preserved:

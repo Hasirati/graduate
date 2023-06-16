@@ -1,6 +1,7 @@
 .content {
 	text-align: left;
 	font-size: large;
+	overflow: auto;
 }
 
 .clear {
@@ -40,4 +41,16 @@
 .container {
 	align-items: center;
 	display: flex;
+}
+
+.list {
+	list-style-type: '- ';
+}
+
+.center {
+	text-align: center;
+}
+
+iframe {
+	border: 0;
 }

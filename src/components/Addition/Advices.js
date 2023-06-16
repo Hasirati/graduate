@@ -1,3 +1,6 @@
+import css from './addition.module.css'
+import PrinterPaper from '../PrinterPaper/PrinterPaper.js'
+
 const Advices = () => (
 	<section>
 		<PrinterPaper title='Advices'>
@@ -12,7 +15,7 @@ const Advices = () => (
 					2017 will help to understand this difficult case.
 				</p>
 
-				<div style='text-align: center;'>
+				<div className={css.center}>
 					<img src='../img/homePrinter.png' width='70%' />
 				</div>
 
@@ -30,8 +33,11 @@ const Advices = () => (
 					USB cord.
 				</p>
 
-				<div style='text-align: center;'>
-					<img src='../img/Canon/CANON i-Sensys LBP6030B.jpg' width='40%' />
+				<div className={css.center}>
+					<img
+						src='./assets/images/Canon/CANON-i-Sensys-LBP6030B.jpg'
+						width='40%'
+					/>
 				</div>
 
 				<p>
@@ -66,8 +72,11 @@ const Advices = () => (
 					Letter, etc.
 				</p>
 
-				<div style='text-align: center;'>
-					<img src='../img/Samsung/Samsung Xpress M2070W.jpg' width='40%' />
+				<div className={css.center}>
+					<img
+						src='./assets/images/Samsung/Samsung-Xpress-M2070W.jpg'
+						width='40%'
+					/>
 				</div>
 
 				<p>
@@ -95,8 +104,8 @@ const Advices = () => (
 					cartridge and drum.
 				</p>
 
-				<div style='text-align: center;'>
-					<img src='../img/Brother/BROTHER HL-1110R.jpg' width='40%' />
+				<div className={css.center}>
+					<img src='./assets/images/Brother/BROTHER-HL-1110R.jpg' width='40%' />
 				</div>
 
 				<p>

@@ -1,3 +1,6 @@
+import css from './addition.module.css'
+import PrinterPaper from '../PrinterPaper/PrinterPaper.js'
+
 const Payment = () => (
 	<section>
 		<PrinterPaper title='Payment'>
@@ -6,7 +9,7 @@ const Payment = () => (
 
 				<h3 className={css.h3}>Payment to a MonoBank card</h3>
 				<img
-					src='../img/addition/payOfCard.jpg'
+					src='./assets/addition/payOfCard.jpg'
 					width='300'
 					className={css.imgRight}
 				/>
@@ -31,7 +34,7 @@ const Payment = () => (
 
 				<h3 className={css.h3}>Online payment</h3>
 				<img
-					src='../img/addition/onlinePay.jpg'
+					src='./assets/addition/onlinePay.jpg'
 					width='300'
 					className={css.imgRight}
 				/>
@@ -40,11 +43,9 @@ const Payment = () => (
 					payment process takes place on a page protected by security
 					certificates. Choose a payment method convenient for you:
 				</p>
-				<li style="list-style-type: '- ';">through MonoBank;</li>
-				<li style="list-style-type: '- ';">
-					from a Visa or MasterCard bank card;
-				</li>
-				<li style="list-style-type: '- ';">postpaid account.</li>
+				<li className={css.list}>through MonoBank;</li>
+				<li className={css.list}>from a Visa or MasterCard bank card;</li>
+				<li className={css.list}>postpaid account.</li>
 				<p>
 					In the process of using the online payment service, you will be
 					prompted to indicate your e-mail.
@@ -54,7 +55,7 @@ const Payment = () => (
 
 				<h3 className={css.h3}>Cash on delivery</h3>
 				<img
-					src='../img/addition/cashOnDelivery.jpg'
+					src='./assets/addition/cashOnDelivery.jpg'
 					width='300'
 					className={css.imgRight}
 				/>
@@ -77,14 +78,14 @@ const Payment = () => (
 
 				<h3 className={css.h3}>Postal transfer in Ukraine</h3>
 				<img
-					src='../img/addition/postOfficePay.jpg'
+					src='./assets/addition/postOfficePay.jpg'
 					width='300'
-					class='imgRight'
+					className={css.imgRight}
 				/>
 				<p>
 					An available option is a postal order in Ukraine. We are glad to
 					announce that the online store MyPrinters <b>accepts payments</b> in
-					two varieties: to the address and on demand. As long as this{' '}
+					two varieties: to the address and on demand. As long as this
 					<b>payment method</b> is convenient for customers, we are always ready
 					to go to a meeting.
 				</p>

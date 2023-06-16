@@ -1,8 +1,10 @@
+import css from './addition.module.css'
+import PrinterPaper from '../PrinterPaper/PrinterPaper.js'
+
 const Delivery = () => (
 	<section>
 		<PrinterPaper title='Delivery'>
 			<div className={css.content}>
-				{' '}
 				<p>The goods can be delivered in several ways​:</p>
 				<h3 className={css.h3}>
 					Delivery across Ukraine by new mail (at the expense of the buyer)
@@ -53,10 +55,6 @@ const Delivery = () => (
 					<br />
 					When placing an order, you can also choose targeted delivery and the
 					Ukrposhta courier will deliver the order to the address you specified.
-				</p>
-				<p style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">
-					Also check out the possible <a href='payment.html'>payment methods</a>
-					.
 				</p>
 			</div>
 		</PrinterPaper>

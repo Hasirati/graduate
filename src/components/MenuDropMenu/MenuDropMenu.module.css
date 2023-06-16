@@ -2,6 +2,7 @@
 	position: fixed;
 	left: 30px;
 	text-align: center;
+	overflow: auto;
 }
 
 /*  */
