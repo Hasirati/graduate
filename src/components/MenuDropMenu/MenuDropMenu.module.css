@@ -1,16 +1,7 @@
-.dropMenu {
-	position: fixed;
-	left: 30px;
-	text-align: center;
-	overflow: auto;
-}
-
-/*  */
-
 .dropDownMenuDiv {
 	display: flex;
 	position: fixed;
-	top: 18%;
+	top: 17%;
 	height: 150px;
 	box-shadow: 2px 2px 10px var(--shadow);
 	background-color: var(--white);
@@ -22,7 +13,8 @@
 
 .menuIkon {
 	text-align: center;
-	width: 100px;
+	width: 200px;
+	object-fit: cover;
 }
 
 .menuIkon:hover {
@@ -31,20 +23,8 @@
 	color: var(--white);
 }
 
-.icon {
+.menuIkonImg {
+	width: 100px;
+	height: 100px;
 	margin: 10px;
-}
-
-.dropMenu.active {
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);
-	transition: 500ms ease;
-}
-
-.dropMenu.inactive {
-	opacity: 0;
-	visibility: hidden;
-	transform: translateY(-20px);
-	transition: 500ms ease;
 }
