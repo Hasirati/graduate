@@ -2,9 +2,9 @@ import React from 'react'
 import css from './MenuDropMenu.module.css'
 import MenuDrop from './MenuDrop'
 
-export default function MenuDropMenu() {
+export default function MenuDropMenu({ onClose }) {
 	return (
-		<div className={css.dropDownMenuDiv}>
+		<div className={css.dropDownMenuDiv} onMouseLeave={onClose}>
 			<MenuDrop icon={'./assets/ikon/menuPayment.png'} name={'Payment'} />
 			<MenuDrop icon={'./assets/ikon/menuDelivery.png'} name={'Delivery'} />
 			<MenuDrop icon={'./assets/ikon/menuReturn.png'} name={'Return'} />

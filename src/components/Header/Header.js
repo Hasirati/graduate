@@ -1,16 +1,12 @@
 import css from './Header.module.css'
 import React, { useState } from 'react'
 import Modal from '../Modal/Modal'
-import MainPhoto from '../MainPhoto/MainPhoto'
-import printers from '../../db.json'
-import PrinterList from '../PrinterList/PrinterList.js'
-import PrinterPaper from '../PrinterPaper/PrinterPaper.js'
-import AboutUs from '../Addition/AboutUs'
 import MenuDropCatalog from '../MenuDropCatalog/MenuDropCatalog'
 import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
 
 export default function Header() {
-	const [showModal, setShowModal] = useState(false)
+	const [showMenu, setShowMenu] = useState(false)
+	const [showCatalog, setShowCatalog] = useState(false)
 
 	return (
 		<header className='container'>
@@ -35,12 +31,15 @@ export default function Header() {
 			<nav>
 				<ul>
 					<li>Home</li>
-					<li>Catalog</li>
-					<li onMouseEnter={() => setShowModal(!showModal)}>Menu</li>
+					<li onMouseEnter={() => setShowCatalog(!showCatalog)}>Catalog</li>
+					<li onMouseEnter={() => setShowMenu(!showMenu)}>Menu</li>
 					<li>About us</li>
 				</ul>
 			</nav>
-			{showModal && <MenuDropMenu />}
+			{showCatalog && (
+				<MenuDropCatalog onClose={() => setShowCatalog(!showCatalog)} />
+			)}
+			{showMenu && <MenuDropMenu onClose={() => setShowMenu(!showMenu)} />}
 		</header>
 	)
 }
