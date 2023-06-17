@@ -23,23 +23,20 @@
 	padding: 0;
 }
 
-.menuDropDownCatalog div li a {
+.catalogName {
+	margin: 10px;
 	text-align: center;
 	color: black;
 	text-decoration: none;
 }
 
-.menuDropDownCatalog div li {
-	margin: 10px;
-}
-
-.menuDropDownCatalog div li:hover a {
+.catalogName:hover {
 	background-color: var(--light-blue);
 	cursor: pointer;
 	color: var(--white);
 }
 
-.menuDropDownCatalog div img {
+.catalogImg {
 	margin: 10px;
 	/* display: none; */
 	max-width: 300px;
