@@ -53,18 +53,17 @@ export default function Header() {
 					<li>About us</li>
 				</ul>
 			</nav>
-			<ul>
-				<section className={`menuDrop $ {open ? 'active' : 'inactive'}`}>
-					{/* <div className='container'> */}
-					<div className={css1.dropDownMenuDiv}>
-						<MenuDrop icon={<GiReceiveMoney />} name={'Payment'} />
-						<MenuDrop icon={TbTruckDelivery} name={'Delivery'} />
-						<MenuDrop icon={TbTruckReturn} name={'Return'} />
-						<MenuDrop icon={BiMessageSquare} name={'Advices'} />
-						<MenuDrop icon={BsFillTelephoneFill} name={'Contacts'} />
-					</div>
-				</section>
-			</ul>
+
+			<section className={`menuDrop ${open ? 'active' : 'inactive'}`}>
+				{/* <div className='container'> */}
+				<div className={css1.dropDownMenuDiv}>
+					<MenuDrop icon={<GiReceiveMoney />} name={'Payment'} />
+					<MenuDrop icon={TbTruckDelivery} name={'Delivery'} />
+					<MenuDrop icon={TbTruckReturn} name={'Return'} />
+					<MenuDrop icon={BiMessageSquare} name={'Advices'} />
+					<MenuDrop icon={BsFillTelephoneFill} name={'Contacts'} />
+				</div>
+			</section>
 		</header>
 	)
 }

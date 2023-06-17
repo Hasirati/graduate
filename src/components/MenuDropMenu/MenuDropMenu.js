@@ -1,11 +1,9 @@
-import { useState } from 'react'
-import React from 'react'
+import React, { useState } from 'react'
 import { BiMessageSquare } from 'react-icons/bi'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { GiReceiveMoney } from 'react-icons/gi'
 import { TbTruckDelivery, TbTruckReturn } from 'react-icons/tb'
 import css from './MenuDropMenu.module.css'
-import React from 'react'
 import MenuDrop from './MenuDrop'
 
 export default function MenuDropMenu({ items }) {
