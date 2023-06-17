@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 import DropDownImg from './DropDownImg'
 import DropDownName from './DropDownName'
 
-export default function MenuDropCatalog() {
+export default function MenuDropCatalog({ onClose }) {
 	const [currentUrl, setCurrentUrl] = useState(
 		'./assets/images/homePrinter.png'
 	)
 
 	return (
-		<div className={css.menuDropDownCatalog}>
+		<div className={css.menuDropDownCatalog} onMouseLeave={onClose}>
 			<div>
 				<DropDownName
 					name={'Brother'}
