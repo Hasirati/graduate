@@ -1,5 +1,5 @@
 import css from './Header.module.css'
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import Modal from '../Modal/Modal'
 import MainPhoto from '../MainPhoto/MainPhoto'
 import printers from '../../db.json'
@@ -10,23 +10,7 @@ import MenuDropCatalog from '../MenuDropCatalog/MenuDropCatalog'
 import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
 
 export default function Header() {
-	const [open, setOpen] = useState(false)
-	let menuRef = useRef()
-
-	useEffect(() => {
-		let handler = e => {
-			if (!menuRef.current.contains(e.target)) {
-				setOpen(false)
-				console.log(menuRef.current)
-			}
-		}
-
-		document.addEventListener('mousedown', handler)
-
-		return () => {
-			document.removeEventListener('mousedown', handler)
-		}
-	})
+	const [showModal, setShowModal] = useState(false)
 
 	return (
 		<header className='container'>
@@ -52,18 +36,11 @@ export default function Header() {
 				<ul>
 					<li>Home</li>
 					<li>Catalog</li>
-					<li
-						onClick={() => {
-							setOpen(!open)
-						}}
-						ref={menuRef}
-					>
-						Menu
-					</li>
+					<li onMouseEnter={() => setShowModal(!showModal)}>Menu</li>
 					<li>About us</li>
 				</ul>
 			</nav>
-			<MenuDropMenu className={`dropMenu ${open ? 'active' : 'inactive'}`} />
+			{showModal && <MenuDropMenu />}
 		</header>
 	)
 }

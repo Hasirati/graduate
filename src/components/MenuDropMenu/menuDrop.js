@@ -5,7 +5,7 @@ import React from 'react'
 export default function MenuDrop(props) {
 	return (
 		<div className={css.menuIkon}>
-			<img src={props.icon} className={css.menuIkon} />
+			<img src={props.icon} className={css.menuIkonImg} />
 			<div>{props.name}</div>
 		</div>
 	)

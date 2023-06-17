@@ -8,15 +8,12 @@ import MenuDrop from './MenuDrop'
 
 export default function MenuDropMenu() {
 	return (
-		<section className={css.dropMenu}>
-			{/* <div className='container'> */}
-			<div className={css.dropDownMenuDiv}>
-				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Payment'} />
-				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Delivery'} />
-				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Return'} />
-				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Advices'} />
-				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Contacts'} />
-			</div>
-		</section>
+		<div className={css.dropDownMenuDiv}>
+			<MenuDrop icon={'./assets/ikon/menuPayment.png'} name={'Payment'} />
+			<MenuDrop icon={'./assets/ikon/menuDelivery.png'} name={'Delivery'} />
+			<MenuDrop icon={'./assets/ikon/menuReturn.png'} name={'Return'} />
+			<MenuDrop icon={'./assets/ikon/menuAdvice.png'} name={'Advices'} />
+			<MenuDrop icon={'./assets/ikon/menuContact.png'} name={'Contacts'} />
+		</div>
 	)
 }
