@@ -1,4 +1,5 @@
 import css from './Modal.module.css'
+import React from 'react'
 
 const Modal = () => {
 	return (

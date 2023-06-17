@@ -1,4 +1,5 @@
 import css from './MainPhoto.module.css'
+import React from 'react'
 
 const MainPhoto = () => {
 	return (

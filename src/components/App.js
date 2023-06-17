@@ -1,5 +1,6 @@
 import Header from './Header/Header.js'
 import Footer from './Footer/Footer'
+import React from 'react'
 import PrinterPaper from './PrinterPaper/PrinterPaper'
 import PrinterList from './PrinterList/PrinterList.js'
 import printers from '../db.json'

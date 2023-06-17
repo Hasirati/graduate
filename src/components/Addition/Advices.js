@@ -1,5 +1,6 @@
 import css from './addition.module.css'
 import PrinterPaper from '../PrinterPaper/PrinterPaper.js'
+import React from 'react'
 
 const Advices = () => (
 	<section>

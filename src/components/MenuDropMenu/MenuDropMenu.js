@@ -1,22 +1,23 @@
 import { useState } from 'react'
+import React from 'react'
 import { BiMessageSquare } from 'react-icons/bi'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { GiReceiveMoney } from 'react-icons/gi'
 import { TbTruckDelivery, TbTruckReturn } from 'react-icons/tb'
 import css from './MenuDropMenu.module.css'
 import React from 'react'
-import menuDrop from './menuDrop'
+import MenuDrop from './MenuDrop'
 
-export default function MenuDropMenu(props) {
+export default function MenuDropMenu({ items }) {
 	return (
-		<section className={`menuDrop $ {open ? 'active' : 'inactive'}`}>
+		<section className={`menuDrop $ {{items} ? 'active' : 'inactive'}`}>
 			{/* <div className='container'> */}
 			<div className={css.dropDownMenuDiv}>
-				<menuDrop icon={GiReceiveMoney} name={'Payment'} />
-				<menuDrop icon={TbTruckDelivery} name={'Delivery'} />
-				<menuDrop icon={TbTruckReturn} name={'Return'} />
-				<menuDrop icon={BiMessageSquare} name={'Advices'} />
-				<menuDrop icon={BsFillTelephoneFill} name={'Contacts'} />
+				<MenuDrop icon={<GiReceiveMoney />} name={'Payment'} />
+				<MenuDrop icon={TbTruckDelivery} name={'Delivery'} />
+				<MenuDrop icon={TbTruckReturn} name={'Return'} />
+				<MenuDrop icon={BiMessageSquare} name={'Advices'} />
+				<MenuDrop icon={BsFillTelephoneFill} name={'Contacts'} />
 			</div>
 		</section>
 	)

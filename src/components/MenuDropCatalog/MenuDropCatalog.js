@@ -1,4 +1,5 @@
 import css from './MenuDropCatalog.module.css'
+import React from 'react'
 
 const MenuDropCatalog = () => {
 	return (

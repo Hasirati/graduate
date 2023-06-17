@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 import css from './Printer.module.css'
+import React from 'react'
+
 const Printer = ({ url, name, size, speed, resource, price }) => {
 	return (
 		<div className={css.compContent}>

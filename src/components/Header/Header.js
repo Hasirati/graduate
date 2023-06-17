@@ -1,5 +1,12 @@
 import css from './Header.module.css'
+import React from 'react'
 import { useState } from 'react'
+import { BiMessageSquare } from 'react-icons/bi'
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import { GiReceiveMoney } from 'react-icons/gi'
+import { TbTruckDelivery, TbTruckReturn } from 'react-icons/tb'
+import MenuDrop from '../MenuDropMenu/MenuDrop'
+import css1 from '../MenuDropMenu/MenuDropMenu.module.css'
 import Modal from '../Modal/Modal'
 import MainPhoto from '../MainPhoto/MainPhoto'
 import printers from '../../db.json'
@@ -47,7 +54,16 @@ export default function Header() {
 				</ul>
 			</nav>
 			<ul>
-				<MenuDropMenu />
+				<section className={`menuDrop $ {open ? 'active' : 'inactive'}`}>
+					{/* <div className='container'> */}
+					<div className={css1.dropDownMenuDiv}>
+						<MenuDrop icon={<GiReceiveMoney />} name={'Payment'} />
+						<MenuDrop icon={TbTruckDelivery} name={'Delivery'} />
+						<MenuDrop icon={TbTruckReturn} name={'Return'} />
+						<MenuDrop icon={BiMessageSquare} name={'Advices'} />
+						<MenuDrop icon={BsFillTelephoneFill} name={'Contacts'} />
+					</div>
+				</section>
 			</ul>
 		</header>
 	)

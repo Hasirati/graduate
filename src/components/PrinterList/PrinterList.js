@@ -1,5 +1,7 @@
 import Printer from '../Printer/Printer.js'
 import css from './PrinterList.module.css'
+import React from 'react'
+
 function PrinterList({ items }) {
 	return (
 		<ul className={css.compTable}>
