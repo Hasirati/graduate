@@ -15,7 +15,7 @@ export default function App() {
 		<>
 			<Header />
 			<PrinterPaper title='Assortment'>
-				<PrinterList items={printers} />
+				<PrinterList items={printerList} />
 			</PrinterPaper>
 
 			<Footer />
