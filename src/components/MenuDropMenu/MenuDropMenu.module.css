@@ -1,4 +1,4 @@
-.menuDrop {
+.dropMenu {
 	position: fixed;
 	left: 30px;
 	text-align: center;
@@ -22,13 +22,7 @@
 
 .menuIkon {
 	text-align: center;
-	width: 200px;
-}
-
-.menuIkon a {
-	text-align: center;
-	color: black;
-	text-decoration: none;
+	width: 100px;
 }
 
 .menuIkon:hover {
@@ -41,16 +35,16 @@
 	margin: 10px;
 }
 
-.menuDrop.active {
+.dropMenu.active {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0);
-	transition: var(--speed) ease;
+	transition: 500ms ease;
 }
 
-.menuDrop.inactive {
+.dropMenu.inactive {
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(-20px);
-	transition: var(--speed) ease;
+	transition: 500ms ease;
 }

@@ -1,12 +1,5 @@
 import css from './Header.module.css'
-import React from 'react'
-import { useState } from 'react'
-import { BiMessageSquare } from 'react-icons/bi'
-import { BsFillTelephoneFill } from 'react-icons/bs'
-import { GiReceiveMoney } from 'react-icons/gi'
-import { TbTruckDelivery, TbTruckReturn } from 'react-icons/tb'
-import MenuDrop from '../MenuDropMenu/MenuDrop'
-import css1 from '../MenuDropMenu/MenuDropMenu.module.css'
+import React, { useState, useEffect, useRef } from 'react'
 import Modal from '../Modal/Modal'
 import MainPhoto from '../MainPhoto/MainPhoto'
 import printers from '../../db.json'
@@ -18,6 +11,22 @@ import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
 
 export default function Header() {
 	const [open, setOpen] = useState(false)
+	let menuRef = useRef()
+
+	useEffect(() => {
+		let handler = e => {
+			if (!menuRef.current.contains(e.target)) {
+				setOpen(false)
+				console.log(menuRef.current)
+			}
+		}
+
+		document.addEventListener('mousedown', handler)
+
+		return () => {
+			document.removeEventListener('mousedown', handler)
+		}
+	})
 
 	return (
 		<header className='container'>
@@ -47,23 +56,14 @@ export default function Header() {
 						onClick={() => {
 							setOpen(!open)
 						}}
+						ref={menuRef}
 					>
 						Menu
 					</li>
 					<li>About us</li>
 				</ul>
 			</nav>
-
-			<section className={`menuDrop ${open ? 'active' : 'inactive'}`}>
-				{/* <div className='container'> */}
-				<div className={css1.dropDownMenuDiv}>
-					<MenuDrop icon={<GiReceiveMoney />} name={'Payment'} />
-					<MenuDrop icon={TbTruckDelivery} name={'Delivery'} />
-					<MenuDrop icon={TbTruckReturn} name={'Return'} />
-					<MenuDrop icon={BiMessageSquare} name={'Advices'} />
-					<MenuDrop icon={BsFillTelephoneFill} name={'Contacts'} />
-				</div>
-			</section>
+			<MenuDropMenu className={`dropMenu ${open ? 'active' : 'inactive'}`} />
 		</header>
 	)
 }

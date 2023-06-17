@@ -6,16 +6,16 @@ import { TbTruckDelivery, TbTruckReturn } from 'react-icons/tb'
 import css from './MenuDropMenu.module.css'
 import MenuDrop from './MenuDrop'
 
-export default function MenuDropMenu({ items }) {
+export default function MenuDropMenu() {
 	return (
-		<section className={`menuDrop $ {{items} ? 'active' : 'inactive'}`}>
+		<section className={css.dropMenu}>
 			{/* <div className='container'> */}
 			<div className={css.dropDownMenuDiv}>
-				<MenuDrop icon={<GiReceiveMoney />} name={'Payment'} />
-				<MenuDrop icon={TbTruckDelivery} name={'Delivery'} />
-				<MenuDrop icon={TbTruckReturn} name={'Return'} />
-				<MenuDrop icon={BiMessageSquare} name={'Advices'} />
-				<MenuDrop icon={BsFillTelephoneFill} name={'Contacts'} />
+				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Payment'} />
+				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Delivery'} />
+				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Return'} />
+				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Advices'} />
+				<MenuDrop icon={'./assets/ikon/clock.jpg'} name={'Contacts'} />
 			</div>
 		</section>
 	)
