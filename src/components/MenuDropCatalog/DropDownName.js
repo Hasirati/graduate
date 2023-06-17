@@ -5,8 +5,7 @@ export default function DropDownName(props) {
 	return (
 		<li
 			className={css.catalogName}
-			onMouseEnter={props.showing}
-			onMouseLeave={props.showing}
+			onMouseEnter={() => props.onMouseEnter(props.url)}
 		>
 			{props.name}
 		</li>

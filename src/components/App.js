@@ -1,19 +1,23 @@
 import Header from './Header/Header.js'
 import Footer from './Footer/Footer'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PrinterPaper from './PrinterPaper/PrinterPaper'
 import PrinterList from './PrinterList/PrinterList.js'
 import printers from '../db.json'
-import MenuDropMenu from './MenuDropMenu/MenuDropMenu.js'
 
 export default function App() {
+	const [printerList, setPrinterList] = useState([])
+	useEffect(() => {
+		setPrinterList(printers.slice(0, 10))
+	}, [])
+
 	return (
 		<>
 			<Header />
-			{/* <PrinterPaper title='Assortment'>
+			<PrinterPaper title='Assortment'>
 				<PrinterList items={printers} />
-			</PrinterPaper> */}
-			{/* <MenuDropMenu /> */}
+			</PrinterPaper>
+
 			<Footer />
 		</>
 	)
