@@ -3,6 +3,7 @@ import Footer from './Footer/Footer'
 import PrinterPaper from './PrinterPaper/PrinterPaper'
 import PrinterList from './PrinterList/PrinterList.js'
 import printers from '../db.json'
+import MenuDropMenu from './MenuDropMenu/MenuDropMenu.js'
 
 export default function App() {
 	return (
@@ -11,6 +12,7 @@ export default function App() {
 			{/* <PrinterPaper title='Assortment'>
 				<PrinterList items={printers} />
 			</PrinterPaper> */}
+			{/* <MenuDropMenu /> */}
 			<Footer />
 		</>
 	)
