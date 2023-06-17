@@ -7,6 +7,12 @@ import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
 export default function Header() {
 	const [showMenu, setShowMenu] = useState(false)
 	const [showCatalog, setShowCatalog] = useState(false)
+	const handlerShowMenu = () => {
+		setShowMenu(!showMenu)
+	}
+	const handlerShowCatalog = () => {
+		setShowCatalog(!showCatalog)
+	}
 
 	return (
 		<header className='container'>
@@ -31,15 +37,13 @@ export default function Header() {
 			<nav>
 				<ul>
 					<li>Home</li>
-					<li onMouseEnter={() => setShowCatalog(!showCatalog)}>Catalog</li>
-					<li onMouseEnter={() => setShowMenu(!showMenu)}>Menu</li>
+					<li onMouseEnter={handlerShowCatalog}>Catalog</li>
+					<li onMouseEnter={handlerShowMenu}>Menu</li>
 					<li>About us</li>
 				</ul>
 			</nav>
-			{showCatalog && (
-				<MenuDropCatalog onClose={() => setShowCatalog(!showCatalog)} />
-			)}
-			{showMenu && <MenuDropMenu onClose={() => setShowMenu(!showMenu)} />}
+			{showCatalog && <MenuDropCatalog onClose={handlerShowCatalog} />}
+			{showMenu && <MenuDropMenu onClose={handlerShowMenu} />}
 		</header>
 	)
 }
