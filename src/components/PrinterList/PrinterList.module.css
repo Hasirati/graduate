@@ -1,8 +1,8 @@
-.compTable li {
+.visibleTable li {
 	list-style-type: none;
 }
 
-.compTable {
+.visibleTable {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -11,8 +11,17 @@
 	padding-left: 0;
 }
 
-.contImg {
+.conImg {
 	width: 220px;
 	min-height: 220px;
 	object-fit: scale-down;
+	margin: 20px;
+}
+
+.shadow {
+	border-radius: 10px;
+}
+
+.shadow:hover {
+	box-shadow: 2px 2px 20px var(--shadow);
 }

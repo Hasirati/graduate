@@ -7,6 +7,7 @@ import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
 export default function Header() {
 	const [showMenu, setShowMenu] = useState(false)
 	const [showCatalog, setShowCatalog] = useState(false)
+
 	const handlerShowMenu = () => {
 		setShowMenu(!showMenu)
 	}

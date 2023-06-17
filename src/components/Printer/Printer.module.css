@@ -1,18 +1,36 @@
+.oneTable {
+	text-align: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+.backDrop {
+	background-color: var(--black);
+	width: 100%;
+	height: 110%;
+	opacity: 30%;
+	top: 0%;
+	left: 0%;
+	position: fixed;
+}
+
 .compContent {
+	background-color: var(--white);
+	margin: auto;
+	margin-top: -5%;
 	border: solid black 2px;
 	background-color: var(--white);
 	border-radius: 10px;
-	width: 240px;
-	margin: 10px auto;
+	width: 18%;
+	position: relative;
 }
 
 .compImg {
-	padding-top: 10px;
 	box-shadow: 1px 1px 10px var(--shadow);
 	width: 220px;
 	display: block;
-	margin: 3px auto 15px;
-	margin-top: 5px;
+	margin: 5px auto 15px;
 }
 
 .compLine {
