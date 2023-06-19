@@ -1,10 +1,12 @@
 import css from './Header.module.css'
-import React, { useState } from 'react'
+import React, { Children, useState } from 'react'
 import Modal from '../Modal/Modal'
 import MenuDropCatalog from '../MenuDropCatalog/MenuDropCatalog'
 import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
+import { Link, Route, Routes } from 'react-router-dom'
+import AboutUs from '../Addition/AboutUs'
 
-export default function Header() {
+export default function Header({ children }) {
 	const [showMenu, setShowMenu] = useState(false)
 	const [showCatalog, setShowCatalog] = useState(false)
 
@@ -23,7 +25,6 @@ export default function Header() {
 				<button type='button' className={css.butCreate}>
 					Create printer
 				</button>
-
 				<label>
 					<input
 						type='search'
@@ -37,14 +38,26 @@ export default function Header() {
 
 			<nav>
 				<ul>
-					<li>Home</li>
-					<li onMouseEnter={handlerShowCatalog}>Catalog</li>
-					<li onMouseEnter={handlerShowMenu}>Menu</li>
-					<li>About us</li>
+					<Link to='/' className={css.navLi}>
+						Home
+					</Link>
+					<li onMouseEnter={handlerShowCatalog} className={css.navLi}>
+						Catalog
+					</li>
+					<li onMouseEnter={handlerShowMenu} className={css.navLi}>
+						Menu
+					</li>
+					<Link to='/about' className={css.navLi}>
+						About us
+					</Link>
 				</ul>
 			</nav>
 			{showCatalog && <MenuDropCatalog onClose={handlerShowCatalog} />}
 			{showMenu && <MenuDropMenu onClose={handlerShowMenu} />}
+			<Routes>
+				<Route path='/about' element={<AboutUs />} />
+			</Routes>
+			{children}
 		</header>
 	)
 }

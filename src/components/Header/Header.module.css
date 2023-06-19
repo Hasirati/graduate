@@ -91,9 +91,10 @@ nav ul {
 
 nav ul * {
 	list-style-type: none;
+	text-decoration: none;
 }
 
-nav ul li {
+.navLi {
 	display: block;
 	height: 25px;
 	position: relative;
@@ -103,7 +104,7 @@ nav ul li {
 	color: black;
 }
 
-nav ul li:hover {
+.navLi:hover {
 	background-color: var(--light-blue);
 	color: white;
 	cursor: pointer;

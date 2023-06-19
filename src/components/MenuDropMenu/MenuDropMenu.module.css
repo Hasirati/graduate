@@ -11,6 +11,11 @@
 	justify-content: space-around;
 }
 
+.dropDownMenuDiv * {
+	text-decoration: none;
+	color: var(--black);
+}
+
 .menuIkon {
 	text-align: center;
 	width: 200px;
