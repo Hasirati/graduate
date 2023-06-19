@@ -17,7 +17,7 @@ const Advices = () => (
 				</p>
 
 				<div className={css.center}>
-					<img src='../img/homePrinter.png' width='70%' />
+					<img src='./assets/images/homePrinter.png' width='70%' />
 				</div>
 
 				<h3 className={css.h3}>CANON I-SENSYS LBP6030B</h3>

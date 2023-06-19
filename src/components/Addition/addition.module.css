@@ -30,12 +30,15 @@
 	width: 900px;
 	height: 520px;
 	display: flex;
+	float: right;
+	margin: 5px 0 0 5px;
 }
 
 .ikon {
 	width: 100px;
 	border-radius: 100px;
 	margin-right: 30px;
+	margin: 5px 10px 10px 0;
 }
 
 .container {

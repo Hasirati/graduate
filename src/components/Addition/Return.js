@@ -4,7 +4,7 @@ import React from 'react'
 
 const Return = () => (
 	<section>
-		<PrinterPaper title='Payment'>
+		<PrinterPaper title='Return'>
 			<div className={css.content}>
 				<h3 className={css.h3}>Terms of return of goods</h3>
 				<p>

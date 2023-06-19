@@ -4,9 +4,8 @@ import Modal from '../Modal/Modal'
 import MenuDropCatalog from '../MenuDropCatalog/MenuDropCatalog'
 import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
 import { Link, Route, Routes } from 'react-router-dom'
-import AboutUs from '../Addition/AboutUs'
 
-export default function Header({ children }) {
+export default function Header() {
 	const [showMenu, setShowMenu] = useState(false)
 	const [showCatalog, setShowCatalog] = useState(false)
 
@@ -54,10 +53,6 @@ export default function Header({ children }) {
 			</nav>
 			{showCatalog && <MenuDropCatalog onClose={handlerShowCatalog} />}
 			{showMenu && <MenuDropMenu onClose={handlerShowMenu} />}
-			<Routes>
-				<Route path='/about' element={<AboutUs />} />
-			</Routes>
-			{children}
 		</header>
 	)
 }
