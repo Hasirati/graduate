@@ -3,11 +3,12 @@ import React, { Children, useState } from 'react'
 import Modal from '../Modal/Modal'
 import MenuDropCatalog from '../MenuDropCatalog/MenuDropCatalog'
 import MenuDropMenu from '../MenuDropMenu/MenuDropMenu'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
 	const [showMenu, setShowMenu] = useState(false)
 	const [showCatalog, setShowCatalog] = useState(false)
+	const [showModal, setShowModal] = useState(false)
 
 	const handlerShowMenu = () => {
 		setShowMenu(!showMenu)
@@ -15,13 +16,20 @@ export default function Header() {
 	const handlerShowCatalog = () => {
 		setShowCatalog(!showCatalog)
 	}
+	const handlerShowModal = () => {
+		setShowModal(!showModal)
+	}
 
 	return (
 		<header className='container'>
 			<div className={css.empty}></div>
 			<section className={css.header}>
 				<span className={css.title}>MY PRINTERS</span>
-				<button type='button' className={css.butCreate}>
+				<button
+					type='button'
+					className={css.butCreate}
+					onClick={handlerShowModal}
+				>
 					Create printer
 				</button>
 				<label>
@@ -51,6 +59,7 @@ export default function Header() {
 					</Link>
 				</ul>
 			</nav>
+			{showModal && <Modal onClose={handlerShowModal} />}
 			{showCatalog && <MenuDropCatalog onClose={handlerShowCatalog} />}
 			{showMenu && <MenuDropMenu onClose={handlerShowMenu} />}
 		</header>

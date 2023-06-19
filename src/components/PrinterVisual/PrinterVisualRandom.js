@@ -3,7 +3,7 @@ import PrinterPaper from '../PrinterPaper/PrinterPaper'
 import PrinterList from '../PrinterList/PrinterList.js'
 import printers from '../../db.json'
 
-export default function PrinterVisualRandom() {
+export default function PrinterVisualRandom({ style }) {
 	const [printerList, setPrinterList] = useState([])
 	useEffect(() => {
 		const getRandomPrinters = () => {
@@ -27,7 +27,7 @@ export default function PrinterVisualRandom() {
 	return (
 		<>
 			<PrinterPaper title='Assortment'>
-				<PrinterList items={printerList} />
+				<PrinterList items={printerList} style={style} />
 			</PrinterPaper>
 		</>
 	)

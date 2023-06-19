@@ -2,11 +2,23 @@ import PropTypes from 'prop-types'
 import css from './Printer.module.css'
 import React from 'react'
 
-const Printer = ({ url, name, size, speed, resource, price, onClose }) => {
+const Printer = ({
+	url,
+	name,
+	size,
+	speed,
+	resource,
+	price,
+	onClose,
+	style,
+}) => {
+	const myStyle = {
+		marginTop: style,
+	}
 	return (
 		<div className={css.oneTable}>
 			<div className={css.backDrop} onClick={onClose} />
-			<div className={css.compContent}>
+			<div className={css.compContent} style={myStyle}>
 				<img className={css.compImg} src={url} alt={name} />
 				<h3 className={css.compLine}>{name}</h3>
 				<p className={css.compLine}>Maximum paper size: {size}</p>

@@ -1,9 +1,9 @@
 import css from './Modal.module.css'
 import React from 'react'
 
-const Modal = () => {
+export default function Modal({ onClose }) {
 	return (
-		<section className={css.modal}>
+		<section className={css.modal} onClick={onClose}>
 			<div className={css.overlay}></div>
 			<div className={css.modalWindow}>
 				<div className={css.modalHead}>
@@ -88,5 +88,3 @@ const Modal = () => {
 		</section>
 	)
 }
-
-export default Modal

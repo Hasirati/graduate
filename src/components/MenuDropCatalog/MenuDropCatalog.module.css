@@ -23,6 +23,10 @@
 	padding: 0;
 }
 
+.menuDropDownCatalog div * {
+	text-decoration: none;
+}
+
 .catalogName {
 	margin: 10px;
 	text-align: center;

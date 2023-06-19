@@ -31,3 +31,7 @@ body {
 	--red: rgb(255, 0, 0);
 	--light-blue: CornflowerBlue;
 }
+
+main {
+	flex-grow: 1;
+}

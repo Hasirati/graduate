@@ -11,12 +11,12 @@ export default function PrinterVisual({ folder }) {
 			printer.url.includes(`/${folder}/`)
 		)
 		setPrinterList(filteredPrinters)
-	}, [])
+	}, [folder])
 
 	return (
 		<>
-			<PrinterPaper title='Assortment'>
-				<PrinterList items={printerList} />
+			<PrinterPaper title={folder}>
+				<PrinterList items={printerList} style={'-9%'} />
 			</PrinterPaper>
 		</>
 	)

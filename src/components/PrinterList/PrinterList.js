@@ -2,7 +2,7 @@ import Printer from '../Printer/Printer.js'
 import css from './PrinterList.module.css'
 import React, { useState } from 'react'
 
-function PrinterList({ items }) {
+function PrinterList({ items, style }) {
 	const [selectedPrinter, setSelectedPrinter] = useState(null)
 
 	const handlePrinterClick = printer => {
@@ -33,6 +33,7 @@ function PrinterList({ items }) {
 					resource={selectedPrinter.resource}
 					price={selectedPrinter.price}
 					onClose={handleCloseModal}
+					style={style}
 				/>
 			)}
 		</ul>

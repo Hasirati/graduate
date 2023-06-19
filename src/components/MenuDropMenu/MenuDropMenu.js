@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './MenuDropMenu.module.css'
 import MenuDrop from './MenuDrop'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function MenuDropMenu({ onClose }) {
 	return (
